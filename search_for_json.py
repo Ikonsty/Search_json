@@ -26,6 +26,10 @@ data = connection.read().decode()
 js = json.loads(data)
 
 def search_json(json):
+    """
+    dict -> dict
+    You can serch values by key
+    """
     nick_pair = []
     nicknames = []
     j = 0
