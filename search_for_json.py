@@ -24,6 +24,7 @@ connection = urllib.request.urlopen(url, context=ctx)
 data = connection.read().decode()
 
 js = json.loads(data)
+print(json.dumps(js, indent=2))
 
 def search_json(json):
     """
@@ -110,7 +111,5 @@ def search_json(json):
                     else:
                         print("Nothing")
                         print('')
+
 search_json(js)
-
-
-# print(json.dumps(js, indent=2))
